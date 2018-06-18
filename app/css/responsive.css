@@ -1,0 +1,10 @@
+@media all and (max-width: 992px) {
+    #contact .container .row .col-md-6 form {
+        margin: 0px;
+    }
+    #main-nav .container #navbarNav ul li a,
+    #footer .container .row .to-right {
+        text-align: center;
+        margin-top: 15px;
+    }
+}

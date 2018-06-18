@@ -1,0 +1,88 @@
+@import 'zmienne';
+
+#work {
+    background-color: $color-background;
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 60px;
+    cursor: pointer;
+    #header-work {
+        h2 {
+            color: $white;
+            border-color: #4e5a62;
+            margin-bottom: 45px;
+        }
+    }
+    .row {
+        .col-sm-6 {
+            .work-inner {
+                .background-work {
+                    height: 265px;
+                    @include background-property;
+                    margin: 15px 0px;
+                    .mask-work-outer {
+                        opacity: 0;
+                        transition: all 0.4s;
+                        .mask-work {
+                            background-color: rgba(41, 47, 54, 0.5);
+                            height: 205px;
+                            @include center;
+                            justify-content: center;
+                            .fa {
+                                font-size: 20px;
+                                color: white;
+                            }
+                        }
+                        .mask-border {
+                            height: 60px;
+                            background-color: #292f36;
+                            display: flex;
+                            align-items: center;
+                            text-align: left;
+                            padding-left: 20px;
+                            color: $white;
+                            p {
+                                font-family: $font-headers;
+                                font-weight: 700;
+                                font-size: 14px;
+                                color: $white;
+                            }
+                        }
+                    }
+                    .mask-work-outer:hover {
+                        opacity: 1;
+                    }
+                }
+                .photo1 {
+                    background-image: url('../img/work1.jpg')
+                }
+                .photo2 {
+                    background-image: url('../img/work2.jpg')
+                }
+                .photo3 {
+                    background-image: url('../img/work3.jpg')
+                }
+                .photo4 {
+                    background-image: url('../img/work4.jpg')
+                }
+                .photo5 {
+                    background-image: url('../img/work5.jpg')
+                }
+                .photo6 {
+                    background-image: url('../img/work6.jpg')
+                }
+            }
+        }
+    }
+    .btn {
+        margin-top: 45px;
+        font-size: 14px;
+        border: 2px solid;
+        cursor: pointer;
+    }
+    .btn:hover {
+        border-color: $green;
+        background-color: $green;
+        color: $white;
+    }
+}
