@@ -1,0 +1,27 @@
+@import 'zmienne';
+
+#footer {
+    margin-top: 100px;
+    padding: 40px;
+    background-color: $color-background;
+    color: $white;
+    .container {
+        .row {
+            .col-md-6 {
+                a {
+                    color: $white;
+                    .fa {
+                        padding: 0px 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            p {
+                color: $white;
+            }
+            .to-right {
+                text-align: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import 'zmienne';
+
+#team {
+    margin-bottom: 40px;
+    .container {
+        margin-top: 70px;
+        #header-team {
+            h2 {
+                margin-bottom: 63px;
+            }
+        }
+        .row {
+            .col-sm-6 {
+                .team-inner {
+                    .background-team {
+                        @include background-property;
+                        height: 375px;
+                        border-bottom: 75px solid #e1e6ea;
+                        margin-bottom: 30px;
+                        transition: all 0.4s;
+                        cursor: pointer;
+                        .border-content {
+                            padding-left: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            height: 75px;
+                            h3 {
+                                color: $black;
+                                font-size: 16px;
+                                text-transform: uppercase;
+                                transition: all 0.4s;
+                            }
+                            p {
+                                font-size: 14px;
+                                transition: all 0.4s;
+                            }
+                        }
+                        .mask {
+                            background-color: rgba(255, 255, 255, 0.4);
+                            height: 100%;
+                            @include center;
+                            justify-content: center;
+                            opacity: 0;
+                            transition: all 0.4s;
+                            a {
+                                width: 50px;
+                                height: 50px;
+                                line-height: 50px;
+                                text-align: center;
+                                background-color: $color-background;
+                                color: $white;
+                                margin: 0.5px;
+                            }
+                            a:hover {
+                                background-color: #4e5a62;
+                            }
+                        }
+                    }
+                    .background-team:hover {
+                        border-color: $color-background;
+                        color: $white;
+                        h3,
+                        p {
+                            color: $white;
+                        }
+                        .mask {
+                            opacity: 1;
+                        }
+                    }
+                    .img1 {
+                        background-image: url('../img/pic1.jpg');
+                    }
+                    .img2 {
+                        background-image: url('../img/pic2.jpg');
+                    }
+                    .img3 {
+                        background-image: url('../img/pic3.jpg');
+                    }
+                    .img4 {
+                        background-image: url('../img/pic4.jpg');
+                    }
+                }
+            }
+        }
+    }
+}
